@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent any {
+        tools {
+            gradle 'gradle-7.2'
+        }
+    }
     stages {
         stage('Build') {
             steps {
