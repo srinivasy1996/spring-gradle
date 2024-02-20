@@ -1,5 +1,5 @@
 pipeline {
-    agent  {
+    agent [any] {
         tools {
             gradle 'gradle-7.2'
         }
